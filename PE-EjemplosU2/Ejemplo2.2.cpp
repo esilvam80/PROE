@@ -4,7 +4,7 @@ int main()
 {
     string txt;
     cout << "Escribe un texto ";
-    getlinbe(cin, txt);
+    getline(cin, txt);
     cout << "Tu escribiste: \n" << txt;
     return 0;
 }
