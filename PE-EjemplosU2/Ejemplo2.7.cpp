@@ -1,22 +1,16 @@
-/***************************************************
-Calcular el mayor de dos números leídos del teclado 
-y visualizarlo en pantalla.
-***************************************************/
 #include <iostream>
 using namespace std;
-
 int main()
 {
-    int x, y;
-    cout << "Introduzca dos enteros: \n";
-    cout << "Valor 1:\t"; cin >> x;
-    cout << "Valor 2:\t";  cin >> y;
+    int n,d;
+    cout "Introduzca dos enteros:";
+    cin >> n;
+    cin >> d;
     
-    if (x > y) 
-        cout << "\nEl mayor es: \t" << x << endl;
-    else
-        cout << "\nEl mayor es: \t" << y << endl;
-        
+    // comparar numero a cero
+    if (n%d==0)
+        cout << n << "es divisible por " << d <<endl;
+    
     return 0;
 }
 

@@ -1,18 +1,14 @@
 #include <iostream>
-#includ<iomanip>
 using namespace std;
 int main()
 {
-    int n;
-    cout << "Introduca un numero decimal : ";
-    cin >> n;
-    cout << endl;
-    cout << n << "en hexadecimal es: "
-    << hex << n << "\n"
-    << dec << n << " en octal es: "
-    << oct << n << "\n"
-    << setbase(10) << n << "en decimal es: "
-    << n << endl;
+    char buffer[5]; 
+    cin.read(buffer,5); 
+    cout.write(buffer,10); 
+    cout << endl; 
+    cout.write(buffer,3); 
+    cout << endl << "gcount "<< cin.gcount() << endl; 
+    cout.write(buffer,cin.gcount());
     return 0;
 }
 
